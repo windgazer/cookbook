@@ -1,3 +1,7 @@
+---
+---
+//Above lines should trigger jeckyl build.
+
 @import "extends/settings";
 @import "extends/utils";
 @import "modules/typography";
@@ -40,7 +44,7 @@ aside {
 	@extend %nocollapse;
 	@extend %bordered-box;
 	background-color: $c_bg_menu;
-	box-shadow: 
+	box-shadow:
 				0 ($m_whitespace / 8) 0 0 $c_content_bg,
 				0 ($m_whitespace / 4) 0 0 $c_content
 				;
