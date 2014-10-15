@@ -1,5 +1,6 @@
 ---
 title: Home-cooked Pasta
+layout: recipe
 tags:
     - pasta
     - base
