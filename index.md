@@ -1,8 +1,6 @@
 ---
 title: The Insignificant Cookbook
-layout: default
+layout: cover
 ---
 
 # Let's get the cookin' started
-
-Tadaa!

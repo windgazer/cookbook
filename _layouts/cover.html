@@ -1,0 +1,7 @@
+{% capture myContent %}
+    {{content}}
+
+    <ul class="covers">{% for post in site.posts limit:4 %}
+        {% include media.html post=post %}
+    {% endfor %}</ul>
+{% endcapture %}{% include template.html content=myContent id="cover" styles="cover" %}

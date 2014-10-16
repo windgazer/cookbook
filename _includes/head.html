@@ -1,3 +1,4 @@
+
 <head>
     <!-- On thin ice, template created by Martin 'Windgazer' Reurings -->
     <!-- To modify it is recommended to fork on git, SASS is used for the CSS generation. -->
@@ -14,5 +15,7 @@
     <meta property="og:image" content="http://www.gravatar.com/avatar/ebccf429d533381a57ca5797aa85a7f2.png" />
     <link rel="canonical" href="{{site.url}}{{page.url}}" />
     <link rel="shortcut icon" href="{{site.url}}/favicon.png">
-    <link rel="stylesheet" type="text/css" href="{{site.url}}/css/base.css" media="screen">
+    {% if include.styles %}{% assign styles = include.styles | split: "|" %}{% for value in styles %}<link rel="stylesheet" type="text/css" href="{{site.url}}/css/{{ value }}.css" media="screen">
+    {% endfor %}{% else %}<link rel="stylesheet" type="text/css" href="{{site.url}}/css/base.css" media="screen">
+    {% endif %}
 </head>

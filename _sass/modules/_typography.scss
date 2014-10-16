@@ -13,18 +13,22 @@
 	margin-right: $m_whitespace;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Linden+Hill);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script|Vollkorn:400italic,400,700);
 
 h1, h2, h3, h4, h5, p {
 	@extend %reset;
 	@extend %m_content;
 }
 
+body {
+	font-family: 'Vollkorn', serif;
+}
+
 h1, h2, h3, h4, h5 {
 	margin-top: ($m_whitespace * 1.5);
 	text-align: left;
 	font-size: 1.25em;
-    font-family: 'Linden Hill', serif;
+	font-family: 'Marck Script', cursive;
     & + p {
     	text-indent: 1em;
     }
@@ -33,49 +37,6 @@ h1, h2, h3, h4, h5 {
 h1 {
 	text-align: center;
 	font-size: ($m_whitespace * 1.5);
-	text-transform: uppercase;
-}
-
-header > h1 {
-    font-size: 4em;
-    padding: ($m_whitespace * 1.5) 0 0;
-    margin: 0;
-	text-transform: inherit;
-	height: 0;
-	overflow: hidden;
-	position: relative;
-	white-space: nowrap;
-	&::before {
-		top: 0;
-		content: 'The';
-		position: absolute;
-		font-size: 0.5em;
-		-webkit-transform: rotate(270deg) translateX(-0.5em) translateY(-0.5em);
-	}
-	&::after {
-		content: 'Insignificant C\221E kb\221E k';
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 0;
-	}
-}
-
-#blogpost {
-	margin-top: ($m_whitespace * 6);
-	position: relative;
-	//The following would preferably be solved by column-span, but that is
-	//not verry well supported as yet: https://developer.mozilla.org/en-US/docs/Web/CSS/column-span
-	& > h1:first-child {
-		position: absolute;
-		bottom: 100%;
-		right: $m_whitespace;
-		left: $m_whitespace;
-	}
-}
-
-#home > p {
-	-webkit-columns: 3;
 }
 
 p {

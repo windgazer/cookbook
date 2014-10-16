@@ -15,3 +15,14 @@
 	padding-bottom: 1px;
 	padding-top: 1px;
 }
+
+%clearFloat {
+	&:after {
+		content: "\a0 ";
+		display: block;
+		clear: both;
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}

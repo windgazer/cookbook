@@ -1,12 +1,12 @@
 ---
-title: Home-cooked Pasta
+title: Quick as you can Pizza Dough
 layout: recipe
 tags:
-    - pasta
+    - bread
     - base
 thumb:
-    link: https://www.flickr.com/photos/windgazer/2867689568
-    src: https://farm4.staticflickr.com/3020/2867689568_c5b342b035_o.jpg
+    link: https://www.flickr.com/photos/windgazer/2931056820
+    src: https://farm4.staticflickr.com/3216/2931056820_7e75d22ea2_o.jpg
 ---
 
 Let's start off by saying, this is something I've wanted to do for a long time now, make

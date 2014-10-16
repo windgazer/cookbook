@@ -1,0 +1,186 @@
+---
+---
+//Above lines should trigger jeckyl build.
+
+@import "extends/settings";
+@import "extends/utils";
+@import "modules/typography";
+
+html,
+body,
+ul,
+ol {
+	@extend %reset;
+	background-color: $c_body_bg;
+	color: $c_content;
+}
+
+#page {
+	background-color: $c_content_bg;
+	margin: $m_whitespace auto (2 * $m_whitespace);
+	padding: 1px 0;
+	width: 50em;
+}
+
+#page
+
+#page > * {
+    z-index: 10;
+}
+
+#page {
+    min-height: 100%;
+}
+
+header {
+    height: 3em;
+    width: 34em;
+    padding: 0 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1.5em 0 0 -18em;
+}
+
+header::before,
+header::after {
+    content: "\a0 ";
+    height: 100%;
+    width: 3.25em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:
+        linear-gradient(155deg,
+            rgba(0,0,0,0) 0.75em,
+            rgba(0,0,0,1) 0.8em
+        )
+        no-repeat 2em -0.3em,
+        linear-gradient(90deg,
+            rgba(0,0,0,0) 1.6em,
+            rgba(255,255,255,1) 1.6em
+        )
+        no-repeat 0 0,
+        linear-gradient(45deg,
+            rgba(0,0,0,0) 2.1em,
+            rgba(0,0,0,1) 2.1em,
+            rgba(255,255,255,1) 2.2em
+        )
+        no-repeat -1.5em -1.5em,
+        linear-gradient(135deg,
+            rgba(0,0,0,0) 2.1em,
+            rgba(0,0,0,1) 2.1em,
+            rgba(255,255,255,1) 2.2em
+        )
+        no-repeat 0.1em 0
+    ;
+    border: 1px solid black;
+    border-width: 0.1em 0.1em 0.1em 0;
+    z-index: 1;
+}
+header::after {
+    left: auto;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+header > h1 {
+    position: relative;
+    font-size: 185%;
+    top: 0.35em;
+    border: 0.05em solid black;
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 0.2em 0;
+    z-index: 2;
+}
+
+aside {
+	@extend %clearFloat;
+	position: relative;
+	z-index: 30;
+	background: rgba( 255,255,255 ,0.5 );
+	padding: 0.25em 1em;
+}
+
+aside > nav {
+	float: left;
+}
+
+aside li {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+aside a {
+	color: black;
+	text-shadow: 0.05em 0.05em 0.25em rgba( 255,255,255 ,0.75);
+}
+
+aside > div,
+aside > iframe {
+	font-size: inherit !important;
+	float: right !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 20;
+}
+
+.media {
+	position: absolute;
+	top: 0;
+	right: 50%;
+	bottom: 50%;
+	left: 0;
+}
+.media:nth-child(2),
+.media:nth-child(4) {
+	right: 0;
+	left: 50%;
+}
+.media:nth-child(3),
+.media:nth-child(4) {
+	top: 50%;
+	bottom: 0;
+}
+
+.media > img {
+	height: 100%;
+	width: 100%;
+	background-position: 50% 50%;
+	background-size: 150%;
+	background-repeat: no-repeat;
+}
+
+.media > p,
+.media > time,
+.media > h3 {
+	display: none;
+}
+
+.media > a,
+.media > h3 {
+	text-indent: -100em;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.media:hover > h3 {
+	display: block;
+	margin: 0;
+	padding: 2.5em;
+	text-indent: 0;
+	text-shadow: 0.05em 0.05em 0.25em rgba( 255,255,255 ,0.75);
+	box-shadow: inset 0 0 5em black;
+}

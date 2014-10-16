@@ -1,0 +1,9 @@
+<li class="media">
+    {% if include.post.thumb %}<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQ" style="background-image: url({{ include.post.thumb.src }})" alt="thumb" />
+    {% else %}<img src="{{ site.url }}/thumbs/{{include.post.tags.first}}.png" alt="thumb" />
+    {% endif %}
+    <h3>{{ include.post.title }}</h3>
+    {% if include.post.date %}<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date_to_string }}</time>{% endif %}
+    <p class="introduction">{{ include.post.excerpt | strip_html | truncatewords: 10 }}</p>
+    <a href="{{ site.url }}{{ include.post.url }}">More...</a>
+</li>

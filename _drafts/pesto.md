@@ -1,14 +1,12 @@
 ---
-title: Home-cooked Pasta
+title: Easy does it Pesto
 layout: recipe
 tags:
-    - pasta
-    - base
+    - sauce
 thumb:
-    link: https://www.flickr.com/photos/windgazer/2867689568
-    src: https://farm4.staticflickr.com/3020/2867689568_c5b342b035_o.jpg
+    link: https://www.flickr.com/photos/windgazer/6197166519
+    src: https://farm7.staticflickr.com/6014/6197166519_8b0199e258_o.jpg
 ---
-
 Let's start off by saying, this is something I've wanted to do for a long time now, make
 my own fresh pasta. Word-of-mouth says this is a simple matter and with practice doesn't
 have to take much longer than using pre-packed pasta...

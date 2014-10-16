@@ -1,12 +1,12 @@
 ---
-title: Home-cooked Pasta
+title: Home-made Flatbread
 layout: recipe
 tags:
-    - pasta
+    - bread
     - base
 thumb:
-    link: https://www.flickr.com/photos/windgazer/2867689568
-    src: https://farm4.staticflickr.com/3020/2867689568_c5b342b035_o.jpg
+    link: https://www.flickr.com/photos/windgazer/3187604841
+    src: https://farm4.staticflickr.com/3475/3187604841_53c14a3470_o.jpg
 ---
 
 Let's start off by saying, this is something I've wanted to do for a long time now, make
